@@ -1,0 +1,12 @@
+﻿  CurveProgram.cpp
+C:\Users\st43r\source\repos\CurveLibrary\CurveLibrary.h(71,2): warning C4091: 'extern __declspec(dllimport)': ignored on left of 'Point3D' when no variable is declared
+C:\Users\st43r\source\repos\CurveLibrary\CurveLibrary.h(93,2): warning C4091: 'extern __declspec(dllimport)': ignored on left of 'Curve3D' when no variable is declared
+C:\Users\st43r\source\repos\CurveLibrary\CurveLibrary.h(149,2): warning C4091: 'extern __declspec(dllimport)': ignored on left of 'Circle' when no variable is declared
+C:\Users\st43r\source\repos\CurveLibrary\CurveLibrary.h(224,2): warning C4091: 'extern __declspec(dllimport)': ignored on left of 'Ellipse' when no variable is declared
+C:\Users\st43r\source\repos\CurveLibrary\CurveLibrary.h(299,2): warning C4091: 'extern __declspec(dllimport)': ignored on left of 'Helix' when no variable is declared
+  Generating code
+  Previous IPDB and IOBJ mismatch, fall back to full compilation.
+  All 161 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  CurveProgram.vcxproj -> C:\Users\st43r\source\repos\CurveProgram\x64\Release\CurveProgram.exe
+  0 File(s) copied
