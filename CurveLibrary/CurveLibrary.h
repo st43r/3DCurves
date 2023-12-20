@@ -11,7 +11,7 @@
 /// <summary>
 /// Point in 3D space.
 /// </summary>
-extern class Point3D
+class Point3D
 {
 public:
 	/// <summary>
@@ -75,7 +75,7 @@ private:
 /// <summary>
 /// Abstract curve in 3D space.
 /// </summary>
-extern class Curve3D
+class Curve3D
 {
 public:
 	/// <summary>
@@ -102,7 +102,7 @@ public:
 /// <summary>
 /// Circle in 3D space.
 /// </summary>
-extern class Circle : public Curve3D
+class Circle : public Curve3D
 {
 public:
 	/// <summary>
@@ -163,7 +163,7 @@ private:
 /// <summary>
 /// Ellipse in 3D space.
 /// </summary>
-extern  class Ellipse : public Curve3D
+class Ellipse : public Curve3D
 {
 public:
 	/// <summary>
@@ -244,7 +244,7 @@ private:
 /// <summary>
 /// Helix in 3D space.
 /// </summary>
-extern class Helix : public Curve3D
+class Helix : public Curve3D
 {
 public:
 	/// <summary>
