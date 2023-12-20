@@ -7,10 +7,11 @@
 #define CURVELIBRARY_API __declspec(dllimport)
 #endif
 
+
 /// <summary>
 /// Point in 3D space.
 /// </summary>
-extern CURVELIBRARY_API class Point3D
+extern class Point3D
 {
 public:
 	/// <summary>
@@ -74,7 +75,7 @@ private:
 /// <summary>
 /// Abstract curve in 3D space.
 /// </summary>
-extern CURVELIBRARY_API class Curve3D
+extern class Curve3D
 {
 public:
 	/// <summary>
@@ -90,15 +91,25 @@ public:
 	/// <param name="t">Parameter.</param>
 	/// <returns>Vector coordinates.</returns>
 	CURVELIBRARY_API virtual Point3D GetDerivative(double t) const = 0;
+
+	/// <summary>
+	/// Destructor.
+	/// </summary>
+	~Curve3D() = default;
 };
 
 
 /// <summary>
 /// Circle in 3D space.
 /// </summary>
-extern CURVELIBRARY_API class Circle : public Curve3D
+extern class Circle : public Curve3D
 {
 public:
+	/// <summary>
+	/// Destructor.
+	/// </summary>
+	~Circle() = default;
+
 	/// <summary>
 	/// Default constructor that sets radius value.
 	/// </summary>
@@ -152,9 +163,15 @@ private:
 /// <summary>
 /// Ellipse in 3D space.
 /// </summary>
-extern CURVELIBRARY_API class Ellipse : public Curve3D
+extern  class Ellipse : public Curve3D
 {
 public:
+	/// <summary>
+	/// Destructor.
+	/// </summary>
+	~Ellipse() = default;
+
+
 	/// <summary>
 	/// Default constructor that sets axises value.
 	/// </summary>
@@ -227,9 +244,15 @@ private:
 /// <summary>
 /// Helix in 3D space.
 /// </summary>
-extern CURVELIBRARY_API class Helix : public Curve3D
+extern class Helix : public Curve3D
 {
 public:
+	/// <summary>
+	/// Destructor.
+	/// </summary>
+	~Helix() = default;
+
+
 	/// <summary>
 	/// Default constructor that sets radius and pitch values.
 	/// </summary>
